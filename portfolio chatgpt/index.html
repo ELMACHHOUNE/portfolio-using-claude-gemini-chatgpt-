@@ -1,123 +1,429 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mohamed El Machhoune — Software Engineer, Designer and Instructor." />
-  <title>Mohamed El Machhoune | Developer Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="page-noise"></div>
-  <header class="navbar">
-    <a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span> M<span class="brand-dot">.</span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
-    <nav class="nav-links">
-      <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
-      <a href="#experience">Experience</a><a href="#projects">Projects</a>
-      <a class="nav-contact" href="mailto:hello@elmachhoune.me">Let's talk <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mohamed El Machhoune — Software Engineer, Designer and Instructor."
+    />
+    <title>Mohamed EL MACHHOUNE | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-noise"></div>
+    <header class="navbar">
+      <a class="brand" href="#home"
+        ><span class="brand-mark">&lt;/&gt;</span> M<span class="brand-dot"
+          >.</span
+        ></a
+      >
+      <button
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav-links">
+        <a href="#about">About</a><a href="#education">Education</a
+        ><a href="#skills">Skills</a> <a href="#experience">Experience</a
+        ><a href="#projects">Projects</a>
+        <a class="nav-contact" href="mailto:hello@elmachhoune.me"
+          >Let's talk <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR SELECT PROJECTS</p>
-          <h1>Building digital<br><span class="outline-text">experiences</span><br>with purpose.</h1>
-          <p class="hero-intro">I'm <strong>Mohamed El Machhoune</strong> — software engineer, creative designer, and instructor turning ideas into useful, thoughtful products.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-down"></i></a>
-            <a class="button button-ghost" href="mailto:hello@elmachhoune.me">Get in touch <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="status-dot"></span> AVAILABLE FOR SELECT PROJECTS
+            </p>
+            <h1>
+              Building digital<br /><span class="outline-text">experiences</span
+              ><br />with purpose.
+            </h1>
+            <p class="hero-intro">
+              I'm <strong>Mohamed El Machhoune</strong> — software engineer,
+              creative designer, and instructor turning ideas into useful,
+              thoughtful products.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects"
+                >Explore my work <i class="fa-solid fa-arrow-down"></i
+              ></a>
+              <a class="button button-ghost" href="mailto:hello@elmachhoune.me"
+                >Get in touch
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <div class="hero-meta">
+              <span
+                ><i class="fa-solid fa-location-dot"></i> Morocco ·
+                Remote-first</span
+              ><span class="mono">DEV / DESIGN / TEACH</span>
+            </div>
           </div>
-          <div class="hero-meta"><span><i class="fa-solid fa-location-dot"></i> Morocco · Remote-first</span><span class="mono">DEV / DESIGN / TEACH</span></div>
-        </div>
-        <div class="hero-visual" aria-label="Decorative developer illustration">
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="hero-card card-back"><span class="card-label">CREATIVE PROCESS</span><div class="mini-lines"><i></i><i></i><i></i></div><span class="card-code">01 — THINK<br>02 — BUILD<br>03 — SHIP</span></div>
-          <div class="hero-card code-card"><div class="window-bar"><b></b><b></b><b></b><span>portfolio.js</span></div>
-            <div class="code-content"><span class="code-muted">const</span> <span class="code-blue">developer</span> = {<br>
-              &nbsp;&nbsp;name: <span class="code-yellow">'Mohamed'</span>,<br>
-              &nbsp;&nbsp;focus: [<span class="code-yellow">'web'</span>, <span class="code-yellow">'AI'</span>],<br>
-              &nbsp;&nbsp;mindset: <span class="code-yellow">'keep building'</span><br>
-              };<br><br><span class="code-purple">developer</span>.<span class="code-blue">create</span>();<span class="cursor">▍</span></div>
+          <div
+            class="hero-visual"
+            aria-label="Decorative developer illustration"
+          >
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="hero-card card-back">
+              <span class="card-label">CREATIVE PROCESS</span>
+              <div class="mini-lines"><i></i><i></i><i></i></div>
+              <span class="card-code"
+                >01 — THINK<br />02 — BUILD<br />03 — SHIP</span
+              >
+            </div>
+            <div class="hero-card code-card">
+              <div class="window-bar">
+                <b></b><b></b><b></b><span>portfolio.js</span>
+              </div>
+              <div class="code-content">
+                <span class="code-muted">const</span>
+                <span class="code-blue">developer</span> = {<br />
+                &nbsp;&nbsp;name:
+                <span class="code-yellow">'Mohamed'</span>,<br />
+                &nbsp;&nbsp;focus: [<span class="code-yellow">'web'</span>,
+                <span class="code-yellow">'AI'</span>],<br />
+                &nbsp;&nbsp;mindset:
+                <span class="code-yellow">'keep building'</span><br />
+                };<br /><br /><span class="code-purple">developer</span>.<span
+                  class="code-blue"
+                  >create</span
+                >();<span class="cursor">▍</span>
+              </div>
+            </div>
+            <div class="floating-tag tag-top">
+              <i class="fa-solid fa-code"></i> Full-stack
+            </div>
+            <div class="floating-tag tag-bottom">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Creative tech
+            </div>
+            <div class="hero-spark">✳</div>
           </div>
-          <div class="floating-tag tag-top"><i class="fa-solid fa-code"></i> Full-stack</div>
-          <div class="floating-tag tag-bottom"><i class="fa-solid fa-wand-magic-sparkles"></i> Creative tech</div>
-          <div class="hero-spark">✳</div>
         </div>
+        <div class="scroll-note"><span></span> SCROLL TO EXPLORE</div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <span class="section-index">01 / ABOUT</span>
+          <h2>Curiosity meets<br /><span>craft.</span></h2>
+        </div>
+        <div class="about-content">
+          <p class="about-lead">
+            I love the space where technology, design, and people come together.
+          </p>
+          <p>
+            From building full-stack applications to teaching the next
+            generation of developers, I focus on making digital experiences that
+            are clear, useful, and memorable. My work blends engineering
+            discipline with a designer's eye and a teacher's mindset.
+          </p>
+          <div class="about-stats">
+            <div><strong>3+</strong><span>Years building</span></div>
+            <div><strong>180+</strong><span>Learners supported</span></div>
+            <div><strong>∞</strong><span>Ideas to explore</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education">
+        <div class="section-heading">
+          <span class="section-index">02 / EDUCATION</span>
+          <h2>Learning is<br /><span>continuous.</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">2026 — PRESENT</span>
+            <div>
+              <h3>
+                Master of Excellence · Multimedia Engineering & Digital
+                Creativity
+              </h3>
+              <p>Ibn Tofail University · Kenitra</p>
+              <span class="tag-list"
+                >UX/UI · Game Development · Interactive Media</span
+              >
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2025 — 2026</span>
+            <div>
+              <h3>
+                Licence d’Excellence · Audiovisual, Game, Design & Interactive
+                Multimedia
+              </h3>
+              <p>Ibn Tofail University · Kenitra</p>
+              <span class="tag-list">Digital creativity · Multimedia</span>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2023 — 2025</span>
+            <div>
+              <h3>DEUG · Artistic Careers and Media</h3>
+              <p>Ibn Tofail University · Kenitra</p>
+              <span class="tag-list"
+                >Graphic design · Visual communication</span
+              >
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2023 — 2024</span>
+            <div>
+              <h3>Back-End Development Program</h3>
+              <p>ALX</p>
+              <span class="tag-list">Software engineering foundations</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <span class="section-index">03 / TOOLKIT</span>
+          <h2>Tools of the<br /><span>trade.</span></h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3>Frontend</h3>
+            <p>
+              React · Next.js · TypeScript · JavaScript · Tailwind CSS · HTML ·
+              CSS
+            </p>
+            <span class="skill-number">01</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Backend</h3>
+            <p>Node.js · Express · MongoDB · MySQL · REST APIs · FastAPI</p>
+            <span class="skill-number">02</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>AI & Automation</h3>
+            <p>
+              Generative AI · Prompting · AI integration · Workflow automation ·
+              Python
+            </p>
+            <span class="skill-number">03</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>Design & Delivery</h3>
+            <p>
+              Figma · Illustrator · Photoshop · Docker · Git · Agile
+              collaboration
+            </p>
+            <span class="skill-number">04</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
+        <div class="section-heading">
+          <span class="section-index">04 / EXPERIENCE</span>
+          <h2>Building, sharing<br /><span>and growing.</span></h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-top">
+              <span class="experience-date">2025 — PRESENT</span
+              ><span class="experience-type">INSTRUCTOR</span>
+            </div>
+            <h3>Full-Stack JavaScript Instructor</h3>
+            <p class="experience-org">Wings Tech School · Nouaceur</p>
+            <p>
+              Delivering hands-on MERN Stack training, guiding learners through
+              practical projects and modern development workflows.
+            </p>
+          </article>
+          <article class="experience-item">
+            <div class="experience-top">
+              <span class="experience-date">2024 — PRESENT</span
+              ><span class="experience-type">TRAINER / CONSULTANT</span>
+            </div>
+            <h3>Full-Stack & AI Tools Trainer</h3>
+            <p class="experience-org">Houssnijob Innovation · Freelance</p>
+            <p>
+              Training 180+ learners in web development and adapting technical
+              content for higher-education and professional audiences.
+            </p>
+          </article>
+          <article class="experience-item">
+            <div class="experience-top">
+              <span class="experience-date">2026 — PRESENT</span
+              ><span class="experience-type">INSTRUCTOR</span>
+            </div>
+            <h3>Full-Stack Web Development Trainer</h3>
+            <p class="experience-org">NAJM Foundation · Casablanca</p>
+            <p>
+              Supporting young adults through practical web development training
+              as part of a digital inclusion program.
+            </p>
+          </article>
+          <article class="experience-item">
+            <div class="experience-top">
+              <span class="experience-date">2024 — 2026</span
+              ><span class="experience-type">DEVELOPER</span>
+            </div>
+            <h3>Freelance Frontend Developer</h3>
+            <p class="experience-org">Remote · Client projects</p>
+            <p>
+              Creating responsive interfaces and product experiences with React,
+              modern CSS, and a focus on usability.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading">
+          <span class="section-index">05 / SELECTED WORK</span>
+          <h2>Ideas made<br /><span>real.</span></h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card project-featured">
+            <div class="project-art art-dashboard">
+              <div class="dash-top">
+                <span>GO TO JOBS</span
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+              <div class="dash-content">
+                <div class="dash-sidebar"></div>
+                <div class="dash-main"><i></i><i></i><i></i><i></i></div>
+              </div>
+              <span class="art-label">REAL-TIME · WEB APP</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>GoToJobs</h3>
+                <p>
+                  A real-time job board experience built to connect
+                  opportunities and talent.
+                </p>
+              </div>
+              <span class="project-arrow"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>Socket.IO</span
+              ><span>MongoDB</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-learning">
+              <div class="learning-window">
+                <span class="window-title">e-learning / dashboard</span>
+                <div class="learning-row"><b></b><i></i></div>
+                <div class="learning-row"><b></b><i></i></div>
+                <div class="learning-row"><b></b><i></i></div>
+              </div>
+              <span class="art-label">LEARNING PLATFORM</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>E-Teaching</h3>
+                <p>
+                  A learning platform designed for structured courses and
+                  collaborative teaching.
+                </p>
+              </div>
+              <span class="project-arrow"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+            <div class="project-tags">
+              <span>Next.js</span><span>Docker</span><span>MongoDB</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-eco">
+              <div class="eco-symbol"><i class="fa-solid fa-leaf"></i></div>
+              <span class="eco-word">eco<span>impact</span></span
+              ><span class="art-label">SUSTAINABILITY</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <h3>Eco Impact Morocco</h3>
+                <p>
+                  A clean, responsive web presence for an environmental impact
+                  initiative.
+                </p>
+              </div>
+              <span class="project-arrow"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
+            </div>
+            <div class="project-tags">
+              <span>Frontend</span><span>Responsive UI</span
+              ><span>Web design</span>
+            </div>
+          </article>
+        </div>
+        <p class="projects-note">
+          <span class="mono">MORE IN PROGRESS</span> — Always building something
+          new.
+        </p>
+      </section>
+
+      <section class="contact-section section">
+        <div class="contact-inner">
+          <span class="section-index">HAVE A GOOD IDEA?</span>
+          <h2>Let's make it<br /><span>happen.</span></h2>
+          <a class="button button-primary" href="mailto:hello@elmachhoune.me"
+            >Start a conversation
+            <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+        <div class="contact-decoration">✳</div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#home"
+        ><span class="brand-mark">&lt;/&gt;</span> M<span class="brand-dot"
+          >.</span
+        ></a
+      >
+      <p>
+        Designed & built with curiosity.
+        <span>© <span id="year"></span> Mohamed El Machhoune</span>
+      </p>
+      <div class="social-links" aria-label="Social media links">
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/ELMACHHOUNE" aria-label="GitHub"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/" aria-label="Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://elmachhoune.me" aria-label="Portfolio"
+          ><i class="fa-solid fa-globe"></i
+        ></a>
       </div>
-      <div class="scroll-note"><span></span> SCROLL TO EXPLORE</div>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="section-heading"><span class="section-index">01 / ABOUT</span><h2>Curiosity meets<br><span>craft.</span></h2></div>
-      <div class="about-content">
-        <p class="about-lead">I love the space where technology, design, and people come together.</p>
-        <p>From building full-stack applications to teaching the next generation of developers, I focus on making digital experiences that are clear, useful, and memorable. My work blends engineering discipline with a designer's eye and a teacher's mindset.</p>
-        <div class="about-stats"><div><strong>3+</strong><span>Years building</span></div><div><strong>180+</strong><span>Learners supported</span></div><div><strong>∞</strong><span>Ideas to explore</span></div></div>
-      </div>
-    </section>
-
-    <section class="section education-section" id="education">
-      <div class="section-heading"><span class="section-index">02 / EDUCATION</span><h2>Learning is<br><span>continuous.</span></h2></div>
-      <div class="timeline">
-        <article class="timeline-item"><span class="timeline-date">2026 — PRESENT</span><div><h3>Master of Excellence · Multimedia Engineering & Digital Creativity</h3><p>Ibn Tofail University · Kenitra</p><span class="tag-list">UX/UI · Game Development · Interactive Media</span></div></article>
-        <article class="timeline-item"><span class="timeline-date">2025 — 2026</span><div><h3>Licence d’Excellence · Audiovisual, Game, Design & Interactive Multimedia</h3><p>Ibn Tofail University · Kenitra</p><span class="tag-list">Digital creativity · Multimedia</span></div></article>
-        <article class="timeline-item"><span class="timeline-date">2023 — 2025</span><div><h3>DEUG · Artistic Careers and Media</h3><p>Ibn Tofail University · Kenitra</p><span class="tag-list">Graphic design · Visual communication</span></div></article>
-        <article class="timeline-item"><span class="timeline-date">2023 — 2024</span><div><h3>Back-End Development Program</h3><p>ALX</p><span class="tag-list">Software engineering foundations</span></div></article>
-      </div>
-    </section>
-
-    <section class="section skills-section" id="skills">
-      <div class="section-heading"><span class="section-index">03 / TOOLKIT</span><h2>Tools of the<br><span>trade.</span></h2></div>
-      <div class="skills-grid">
-        <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div><h3>Frontend</h3><p>React · Next.js · TypeScript · JavaScript · Tailwind CSS · HTML · CSS</p><span class="skill-number">01</span></article>
-        <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-server"></i></div><h3>Backend</h3><p>Node.js · Express · MongoDB · MySQL · REST APIs · FastAPI</p><span class="skill-number">02</span></article>
-        <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-brain"></i></div><h3>AI & Automation</h3><p>Generative AI · Prompting · AI integration · Workflow automation · Python</p><span class="skill-number">03</span></article>
-        <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div><h3>Design & Delivery</h3><p>Figma · Illustrator · Photoshop · Docker · Git · Agile collaboration</p><span class="skill-number">04</span></article>
-      </div>
-    </section>
-
-    <section class="section experience-section" id="experience">
-      <div class="section-heading"><span class="section-index">04 / EXPERIENCE</span><h2>Building, sharing<br><span>and growing.</span></h2></div>
-      <div class="experience-list">
-        <article class="experience-item"><div class="experience-top"><span class="experience-date">2025 — PRESENT</span><span class="experience-type">INSTRUCTOR</span></div><h3>Full-Stack JavaScript Instructor</h3><p class="experience-org">Wings Tech School · Nouaceur</p><p>Delivering hands-on MERN Stack training, guiding learners through practical projects and modern development workflows.</p></article>
-        <article class="experience-item"><div class="experience-top"><span class="experience-date">2024 — PRESENT</span><span class="experience-type">TRAINER / CONSULTANT</span></div><h3>Full-Stack & AI Tools Trainer</h3><p class="experience-org">Houssnijob Innovation · Freelance</p><p>Training 180+ learners in web development and adapting technical content for higher-education and professional audiences.</p></article>
-        <article class="experience-item"><div class="experience-top"><span class="experience-date">2026 — PRESENT</span><span class="experience-type">INSTRUCTOR</span></div><h3>Full-Stack Web Development Trainer</h3><p class="experience-org">NAJM Foundation · Casablanca</p><p>Supporting young adults through practical web development training as part of a digital inclusion program.</p></article>
-        <article class="experience-item"><div class="experience-top"><span class="experience-date">2024 — 2026</span><span class="experience-type">DEVELOPER</span></div><h3>Freelance Frontend Developer</h3><p class="experience-org">Remote · Client projects</p><p>Creating responsive interfaces and product experiences with React, modern CSS, and a focus on usability.</p></article>
-      </div>
-    </section>
-
-    <section class="section projects-section" id="projects">
-      <div class="section-heading"><span class="section-index">05 / SELECTED WORK</span><h2>Ideas made<br><span>real.</span></h2></div>
-      <div class="projects-grid">
-        <article class="project-card project-featured"><div class="project-art art-dashboard"><div class="dash-top"><span>GO TO JOBS</span><i class="fa-solid fa-arrow-up-right-from-square"></i></div><div class="dash-content"><div class="dash-sidebar"></div><div class="dash-main"><i></i><i></i><i></i><i></i></div></div><span class="art-label">REAL-TIME · WEB APP</span></div><div class="project-info"><div><h3>GoToJobs</h3><p>A real-time job board experience built to connect opportunities and talent.</p></div><span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></div><div class="project-tags"><span>React</span><span>Node.js</span><span>Socket.IO</span><span>MongoDB</span></div></article>
-        <article class="project-card"><div class="project-art art-learning"><div class="learning-window"><span class="window-title">e-learning / dashboard</span><div class="learning-row"><b></b><i></i></div><div class="learning-row"><b></b><i></i></div><div class="learning-row"><b></b><i></i></div></div><span class="art-label">LEARNING PLATFORM</span></div><div class="project-info"><div><h3>E-Teaching</h3><p>A learning platform designed for structured courses and collaborative teaching.</p></div><span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></div><div class="project-tags"><span>Next.js</span><span>Docker</span><span>MongoDB</span></div></article>
-        <article class="project-card"><div class="project-art art-eco"><div class="eco-symbol"><i class="fa-solid fa-leaf"></i></div><span class="eco-word">eco<span>impact</span></span><span class="art-label">SUSTAINABILITY</span></div><div class="project-info"><div><h3>Eco Impact Morocco</h3><p>A clean, responsive web presence for an environmental impact initiative.</p></div><span class="project-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></div><div class="project-tags"><span>Frontend</span><span>Responsive UI</span><span>Web design</span></div></article>
-      </div>
-      <p class="projects-note"><span class="mono">MORE IN PROGRESS</span> — Always building something new.</p>
-    </section>
-
-    <section class="contact-section section">
-      <div class="contact-inner"><span class="section-index">HAVE A GOOD IDEA?</span><h2>Let's make it<br><span>happen.</span></h2><a class="button button-primary" href="mailto:hello@elmachhoune.me">Start a conversation <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-      <div class="contact-decoration">✳</div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span> M<span class="brand-dot">.</span></a>
-    <p>Designed & built with curiosity. <span>© <span id="year"></span> Mohamed El Machhoune</span></p>
-    <div class="social-links" aria-label="Social media links">
-      <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://github.com/ELMACHHOUNE" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://elmachhoune.me" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
