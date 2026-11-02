@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mohamed | Full Stack Engineer &amp; Graphic Designer</title>
+    <meta
+      name="description"
+      content="Portfolio of Mohamed, a full stack engineer and graphic designer from Morocco working with the MERN stack and Next.js."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Apply the saved theme before the page paints (prevents a flash) -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"></div>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="brand" href="#home" aria-label="Mohamed, back to top">
+          <span class="brand__tag">&lt;</span>Mohamed<span class="brand__tag">
+            /&gt;</span
+          >
+        </a>
+
+        <nav class="nav__menu" id="menu" aria-label="Main">
+          <ul class="nav__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav__actions">
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch to light theme"
+          >
+            <i class="fa-solid fa-sun" aria-hidden="true"></i>
+          </button>
+          <button
+            class="icon-btn burger"
+            id="burger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="home">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <h1 class="hero__title">
+              <span class="hero__hello">Hi, I'm Mohamed.</span>
+              I build full stack apps and design how they look.
+            </h1>
+
+            <p class="hero__role" aria-hidden="true">
+              <i class="fa-solid fa-terminal"></i>
+              <span id="role">Full Stack Engineer</span
+              ><span class="caret caret--inline"></span>
+            </p>
+
+            <p class="hero__lead">
+              Full stack engineer and graphic designer from Morocco. I work with
+              the MERN stack and Next.js, and I teach web development at an
+              OFPPT training center.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">
+                <i class="fa-solid fa-code" aria-hidden="true"></i> See my
+                projects
+              </a>
+              <a class="btn btn--ghost" href="#contact">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i> Get in
+                touch
+              </a>
+            </div>
+          </div>
+
+          <figure
+            class="editor"
+            aria-label="A code editor showing a summary of Mohamed's profile"
+          >
+            <div class="editor__bar">
+              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="editor__tab"
+                ><i class="fa-brands fa-js" aria-hidden="true"></i>
+                developer.js</span
+              >
+            </div>
+            <pre
+              class="editor__body"
+              aria-hidden="true"
+            ><code id="code"></code></pre>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section section--alt" id="about">
+        <div class="container">
+          <h2 class="title">
+            <span>about</span><span class="title__paren">()</span>
+          </h2>
+
+          <div class="about">
+            <div class="about__text">
+              <p>
+                I'm a full stack engineer and graphic designer based in Morocco.
+                I build web applications with the MERN stack and Next.js, and I
+                design the interfaces, branding and motion around them in Figma,
+                Illustrator, Photoshop, After Effects and XD.
+              </p>
+              <p>
+                I also teach first-year TDI (Technicien Développement
+                Informatique) students at an OFPPT vocational training center,
+                where I prepare the curriculum and the exams. Explaining code to
+                beginners keeps my own fundamentals sharp.
+              </p>
+              <p>
+                I like projects where the code and the design are made by the
+                same person, so nothing gets lost between the mockup and the
+                browser.
+              </p>
+            </div>
+
+            <div
+              class="window"
+              role="img"
+              aria-label="Terminal output: whoami, roles, github and location"
+            >
+              <div class="window__bar">
+                <span class="dots" aria-hidden="true"
+                  ><i></i><i></i><i></i
+                ></span>
+                <span class="window__path">~/about</span>
+              </div>
+              <div class="term" aria-hidden="true">
+                <p><span class="term__prompt">$</span> whoami</p>
+                <p class="term__out">mohamed</p>
+                <p><span class="term__prompt">$</span> cat roles.txt</p>
+                <p class="term__out">
+                  Full Stack Engineer<br />Graphic Designer<br />Teacher at
+                  OFPPT
+                </p>
+                <p><span class="term__prompt">$</span> echo $GITHUB</p>
+                <p class="term__out">ELMACHHOUNE</p>
+                <p><span class="term__prompt">$</span> pwd</p>
+                <p class="term__out">
+                  /morocco <span class="caret caret--inline"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <!-- EDIT: replace the placeholder diplomas, schools and years with your own -->
+      <section class="section" id="education">
+        <div class="container">
+          <h2 class="title">
+            <span>education</span><span class="title__paren">()</span>
+          </h2>
+
+          <ol class="timeline">
+            <li class="timeline__item">
+              <p class="timeline__meta">20XX - 20XX</p>
+              <h3>Diploma in Web Development</h3>
+              <p class="timeline__where">Your institution, Morocco</p>
+              <p>
+                Core of my training: JavaScript, databases, web application
+                development and project work.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__meta">20XX - 20XX</p>
+              <h3>Baccalaureate</h3>
+              <p class="timeline__where">Your high school, Morocco</p>
+              <p>Add your track here.</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__meta">Ongoing</p>
+              <h3>Self-directed learning</h3>
+              <p class="timeline__where">Next.js, NestJS, motion design</p>
+              <p>Side projects and open-source work published on GitHub.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section section--alt" id="skills">
+        <div class="container">
+          <h2 class="title">
+            <span>skills</span><span class="title__paren">()</span>
+          </h2>
+
+          <div class="skills">
+            <article class="window">
+              <div class="window__bar">
+                <span class="dots" aria-hidden="true"
+                  ><i></i><i></i><i></i
+                ></span>
+                <span class="window__path"
+                  ><i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                  frontend/</span
+                >
+              </div>
+              <ul class="chips">
+                <li class="chip">
+                  <i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5
+                </li>
+                <li class="chip">
+                  <i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3
+                </li>
+                <li class="chip">
+                  <i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript
+                </li>
+                <li class="chip">
+                  <i class="fa-brands fa-react" aria-hidden="true"></i> React
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-forward" aria-hidden="true"></i> Next.js
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-palette" aria-hidden="true"></i> Radix
+                  UI
+                </li>
+              </ul>
+            </article>
+
+            <article class="window">
+              <div class="window__bar">
+                <span class="dots" aria-hidden="true"
+                  ><i></i><i></i><i></i
+                ></span>
+                <span class="window__path"
+                  ><i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                  backend/</span
+                >
+              </div>
+              <ul class="chips">
+                <li class="chip">
+                  <i class="fa-brands fa-node-js" aria-hidden="true"></i>
+                  Node.js
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-server" aria-hidden="true"></i> Express
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                  NestJS
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-database" aria-hidden="true"></i>
+                  MongoDB
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-plug" aria-hidden="true"></i> REST APIs
+                </li>
+              </ul>
+            </article>
+
+            <article class="window">
+              <div class="window__bar">
+                <span class="dots" aria-hidden="true"
+                  ><i></i><i></i><i></i
+                ></span>
+                <span class="window__path"
+                  ><i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                  design/</span
+                >
+              </div>
+              <ul class="chips">
+                <li class="chip">
+                  <i class="fa-brands fa-figma" aria-hidden="true"></i> Figma
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+                  Illustrator
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-image" aria-hidden="true"></i> Photoshop
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-film" aria-hidden="true"></i> After
+                  Effects
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-vector-square" aria-hidden="true"></i>
+                  Adobe XD
+                </li>
+              </ul>
+            </article>
+
+            <article class="window">
+              <div class="window__bar">
+                <span class="dots" aria-hidden="true"
+                  ><i></i><i></i><i></i
+                ></span>
+                <span class="window__path"
+                  ><i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                  tools/</span
+                >
+              </div>
+              <ul class="chips">
+                <li class="chip">
+                  <i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git
+                </li>
+                <li class="chip">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                </li>
+                <li class="chip">
+                  <i class="fa-brands fa-npm" aria-hidden="true"></i> npm
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-terminal" aria-hidden="true"></i> CLI
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <!-- EDIT: adjust dates and add more roles as needed -->
+      <section class="section" id="experience">
+        <div class="container">
+          <h2 class="title">
+            <span>experience</span><span class="title__paren">()</span>
+          </h2>
+
+          <ol class="timeline">
+            <li class="timeline__item">
+              <p class="timeline__meta">20XX - Present</p>
+              <h3>Teacher, Development (TDI)</h3>
+              <p class="timeline__where">OFPPT vocational training center</p>
+              <p>
+                Prepare the curriculum and the exams for first-year TDI students
+                and teach the fundamentals of web development.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__meta">20XX - Present</p>
+              <h3>Full Stack Engineer &amp; Graphic Designer</h3>
+              <p class="timeline__where">Freelance</p>
+              <p>
+                Build MERN and Next.js applications and design the interfaces,
+                branding and motion graphics around them.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <!-- EDIT: update repository links. Add more cards by copying one <article> -->
+      <section class="section section--alt" id="projects">
+        <div class="container">
+          <h2 class="title">
+            <span>projects</span><span class="title__paren">()</span>
+          </h2>
+
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button
+              class="filter is-active"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All
+            </button>
+            <button
+              class="filter"
+              type="button"
+              data-filter="mern"
+              aria-pressed="false"
+            >
+              MERN
+            </button>
+            <button
+              class="filter"
+              type="button"
+              data-filter="next"
+              aria-pressed="false"
+            >
+              Next.js
+            </button>
+          </div>
+
+          <div class="projects">
+            <article class="window project" data-tags="mern">
+              <div class="window__bar">
+                <span class="dots" aria-hidden="true"
+                  ><i></i><i></i><i></i
+                ></span>
+                <span class="window__path">~/projects/3d-maghribi</span>
+              </div>
+              <div class="project__body">
+                <h3>3D Maghribi</h3>
+                <p>
+                  A MERN web application at 3d-maghribi.com with a Gmail-like
+                  inbox for reading and managing messages.
+                </p>
+                <ul class="tags">
+                  <li>MongoDB</li>
+                  <li>Express</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                </ul>
+                <div class="project__links">
+                  <a
+                    href="https://3d-maghribi.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      aria-hidden="true"
+                    ></i>
+                    Live site</a
+                  >
+                  <a
+                    href="https://github.com/ELMACHHOUNE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="window project" data-tags="next">
+              <div class="window__bar">
+                <span class="dots" aria-hidden="true"
+                  ><i></i><i></i><i></i
+                ></span>
+                <span class="window__path">~/projects/mscrestau</span>
+              </div>
+              <div class="project__body">
+                <h3>MScRestau</h3>
+                <p>
+                  A restaurant landing page built with Next.js 14, using layered
+                  parallax scrolling to present the menu and atmosphere.
+                </p>
+                <ul class="tags">
+                  <li>Next.js 14</li>
+                  <li>Parallax</li>
+                  <li>CSS</li>
+                </ul>
+                <div class="project__links">
+                  <a
+                    href="https://github.com/ELMACHHOUNE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="window project" data-tags="next">
+              <div class="window__bar">
+                <span class="dots" aria-hidden="true"
+                  ><i></i><i></i><i></i
+                ></span>
+                <span class="window__path">~/projects/radix-theme-panel</span>
+              </div>
+              <div class="project__body">
+                <h3>Radix Theme Panel</h3>
+                <p>
+                  A custom theme panel on top of Radix that lets users change
+                  colors and appearance live. Next.js frontend, NestJS backend.
+                </p>
+                <ul class="tags">
+                  <li>Next.js</li>
+                  <li>NestJS</li>
+                  <li>Radix UI</li>
+                </ul>
+                <div class="project__links">
+                  <a
+                    href="https://github.com/ELMACHHOUNE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github" aria-hidden="true"></i>
+                    Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <!-- EDIT: replace the email and the social links with your own -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__top">
+          <div>
+            <h2 class="footer__title">Let's build something together.</h2>
+            <p class="footer__lead">
+              Have a project, a design to code, or a question about my work?
+              Send me a message.
+            </p>
+            <a class="btn btn--primary" href="mailto:hello@example.com">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              hello@example.com
+            </a>
+          </div>
+
+          <ul class="social" aria-label="Social media">
+            <li>
+              <a
+                href="https://github.com/ELMACHHOUNE"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Behance"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://dribbble.com/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Dribbble"
+                ><i class="fa-brands fa-dribbble"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:hello@example.com" aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__bottom">
+          <p>
+            &copy; <span id="year">2026</span> Mohamed. Built with HTML, CSS and
+            JavaScript.
+          </p>
+          <a href="#home"
+            >Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

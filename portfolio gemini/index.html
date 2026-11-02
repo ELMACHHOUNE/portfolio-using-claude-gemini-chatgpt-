@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPortfolio | Full-Stack Software Engineer</title>
+    <!-- Google Fonts: Inter & Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="#hero" class="logo">
+          <span class="code-bracket">&lt;</span>Dev<span class="accent"
+            >Studio</span
+          ><span class="code-bracket">/&gt;</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="#hero" class="nav-link active"><span>01.</span> _home</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link"><span>02.</span> _about</a>
+          </li>
+          <li>
+            <a href="#education" class="nav-link"
+              ><span>03.</span> _education</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="nav-link"><span>04.</span> _skills</a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-link"
+              ><span>05.</span> _experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="nav-link"><span>06.</span> _projects</a>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="mailto:hello@gotodev.ma" class="btn btn-outline btn-sm">
+            <i class="fa-solid fa-terminal"></i> Let's Talk
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <div class="status-badge">
+              <span class="pulse-dot"></span> Available for new projects
+            </div>
+            <p class="hero-greeting mono">Hi there, my name is</p>
+            <h1 class="hero-title">Mohamed.</h1>
+            <h2 class="hero-subtitle">
+              I build <span id="typewriter" class="typewriter"></span
+              ><span class="cursor">|</span>
+            </h2>
+            <p class="hero-description">
+              Full-Stack Software Engineer, UI/UX Designer, and Technical
+              Instructor crafting scalable web applications, interactive 3D web
+              experiences, and clean digital architectures.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fa-solid fa-code-branch"></i> View Projects
+              </a>
+              <a href="#about" class="btn btn-outline">
+                <i class="fa-solid fa-user-astronaut"></i> Explore Profile
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Terminal Window -->
+          <div class="hero-visual reveal">
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-buttons">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="terminal-title mono"
+                  >developer@portfolio:~/profile.ts</span
+                >
+              </div>
+              <div class="terminal-body mono">
+                <p>
+                  <span class="kw">const</span>
+                  <span class="var">developer</span> = {
+                </p>
+                <p class="indent">
+                  <span class="prop">name</span>:
+                  <span class="str">'Mohamed'</span>,
+                </p>
+                <p class="indent">
+                  <span class="prop">role</span>:
+                  <span class="str">'Full-Stack Engineer &amp; Designer'</span>,
+                </p>
+                <p class="indent">
+                  <span class="prop">stack</span>: [<span class="str"
+                    >'Next.js'</span
+                  >, <span class="str">'React'</span>,
+                  <span class="str">'Node.js'</span>,
+                  <span class="str">'TypeScript'</span>],
+                </p>
+                <p class="indent">
+                  <span class="prop">design</span>: [<span class="str"
+                    >'UI/UX'</span
+                  >, <span class="str">'Illustrator'</span>,
+                  <span class="str">'3D Web'</span>],
+                </p>
+                <p class="indent">
+                  <span class="prop">passions</span>: [<span class="str"
+                    >'Clean Architecture'</span
+                  >, <span class="str">'Tech Coaching'</span>],
+                </p>
+                <p class="indent">
+                  <span class="prop">status</span>:
+                  <span class="bool">true</span>
+                  <span class="comment">// Ready to ship</span>
+                </p>
+                <p>};</p>
+                <p class="terminal-prompt">
+                  <span class="prompt-arrow">➜</span>
+                  <span class="prompt-dir">~</span> npm run
+                  deploy-innovation<span class="blinking-cursor">_</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag mono">02. // WHO AM I</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p>
+                I am a software engineer and digital creator who bridges the gap
+                between <strong>robust backend engineering</strong> and
+                <strong>pixel-perfect visual design</strong>. Whether
+                architecting RESTful APIs or crafting custom geometric vectors
+                and interactive interfaces, I focus on building products that
+                feel effortless to use.
+              </p>
+              <p>
+                Beyond writing production code, I lead a digital development
+                studio and mentor aspiring software engineers in full-stack
+                development, modern workflows, and software engineering
+                principles.
+              </p>
+              <div class="about-highlights mono">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-double"></i> Full-Stack Web
+                  Architecture
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-double"></i> UI/UX &amp; Vector
+                  Design
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-double"></i> Interactive 3D &amp;
+                  Multimedia
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-double"></i> Technical Mentorship
+                  &amp; Coaching
+                </div>
+              </div>
+            </div>
+
+            <div class="about-stats reveal">
+              <div class="stat-card">
+                <i class="fa-solid fa-layer-group stat-icon"></i>
+                <h3 class="stat-number">30+</h3>
+                <p class="stat-label">Projects Shipped</p>
+              </div>
+              <div class="stat-card">
+                <i class="fa-solid fa-users-gear stat-icon"></i>
+                <h3 class="stat-number">100+</h3>
+                <p class="stat-label">Devs Mentored</p>
+              </div>
+              <div class="stat-card">
+                <i class="fa-solid fa-terminal stat-icon"></i>
+                <h3 class="stat-number">99.9%</h3>
+                <p class="stat-label">Clean Code Focus</p>
+              </div>
+              <div class="stat-card">
+                <i class="fa-solid fa-mug-hot stat-icon"></i>
+                <h3 class="stat-number">&infin;</h3>
+                <p class="stat-label">Problem Solving</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="education section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag mono">03. // ACADEMIC BACKGROUND</span>
+            <h2 class="section-title">Education</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-content">
+                <span class="timeline-date mono">2025 - Present</span>
+                <h3 class="timeline-title">
+                  B.Sc. (Licence d’Excellence) – Audiovisual, Game, Design &amp;
+                  Interactive Multimedia
+                </h3>
+                <h4 class="timeline-subtitle">
+                  University / School of Interactive Media
+                </h4>
+                <p>
+                  Focusing on interactive systems, digital multimedia
+                  engineering, 3D modeling, game architecture, and advanced
+                  UI/UX design paradigms.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="timeline-content">
+                <span class="timeline-date mono">2022 - 2024</span>
+                <h3 class="timeline-title">
+                  Software Engineering &amp; Full-Stack Architecture
+                  Specialization
+                </h3>
+                <h4 class="timeline-subtitle">Advanced Technical Institute</h4>
+                <p>
+                  Intensive coursework in algorithms, C programming, relational
+                  &amp; NoSQL databases, containerization, and full-stack
+                  JavaScript ecosystems (MERN).
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal">
+              <div class="timeline-marker">
+                <i class="fa-solid fa-bezier-curve"></i>
+              </div>
+              <div class="timeline-content">
+                <span class="timeline-date mono">2021 - 2022</span>
+                <h3 class="timeline-title">
+                  Visual Communication &amp; Vector Design Certification
+                </h3>
+                <h4 class="timeline-subtitle">Digital Design Academy</h4>
+                <p>
+                  Mastered geometric logo construction, custom typography
+                  layouts, brand systems, and high-conversion interface
+                  prototyping.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag mono">04. // TECHNICAL ARSENAL</span>
+            <h2 class="section-title">Skills &amp; Toolchain</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Frontend -->
+            <div class="skill-category reveal">
+              <div class="category-header">
+                <i class="fa-solid fa-display"></i>
+                <h3>Frontend &amp; 3D Web</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-react"></i> React / Next.js</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-js"></i> TypeScript / ES6+</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-css3-alt"></i> Tailwind CSS</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-cube"></i> Three.js / R3F</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-html5"></i> HTML5 / Semantic UI</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-wand-magic-sparkles"></i>
+                  shadcn/ui</span
+                >
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category reveal">
+              <div class="category-header">
+                <i class="fa-solid fa-server"></i>
+                <h3>Backend &amp; Databases</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-node-js"></i> Node.js &amp;
+                  Express</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-python"></i> Python &amp;
+                  FastAPI</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-database"></i> MongoDB / Mongoose</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-table"></i> MySQL / SQL</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-network-wired"></i> REST APIs</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-microchip"></i> C Programming</span
+                >
+              </div>
+            </div>
+
+            <!-- DevOps & Creative Tools -->
+            <div class="skill-category reveal">
+              <div class="category-header">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>DevOps &amp; Design Tools</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub /
+                  GitLab</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-docker"></i> Docker</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-terminal"></i> CLI Automation</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-brands fa-figma"></i> Figma UI/UX</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-pen-nib"></i> Adobe Illustrator</span
+                >
+                <span class="skill-tag"
+                  ><i class="fa-solid fa-cubes"></i> 3D Digital Modeling</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag mono">05. // CAREER PATH</span>
+            <h2 class="section-title">Work Experience</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="experience-list">
+            <div class="exp-card reveal">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">
+                    Founder &amp; Lead Full-Stack Engineer
+                  </h3>
+                  <h4 class="exp-company">
+                    <i class="fa-solid fa-building"></i> GoToDev Digital Studio
+                  </h4>
+                </div>
+                <span class="exp-date mono">2025 - Present</span>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  Architect and deliver full-stack web applications, custom SaaS
+                  dashboards, and brand identities for businesses.
+                </li>
+                <li>
+                  Lead end-to-end product lifecycles from Figma UI/UX
+                  wireframing to cloud deployment and domain management.
+                </li>
+                <li>
+                  Conduct executive workshops on AI adoption and local CLI
+                  workflow automation.
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-card reveal">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Software Engineering Instructor</h3>
+                  <h4 class="exp-company">
+                    <i class="fa-solid fa-chalkboard-user"></i> Tech Bootcamp
+                    &amp; Coding School
+                  </h4>
+                </div>
+                <span class="exp-date mono">2025 - Present</span>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  Mentor cohorts across a comprehensive 15-month Software
+                  Engineering curriculum covering C, algorithms, SQL, and the
+                  MERN stack.
+                </li>
+                <li>
+                  Design practical module examinations, code reviews, and
+                  real-world capstone architectures.
+                </li>
+                <li>
+                  Guide students through Git workflows, agile collaboration, and
+                  technical interview preparation.
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-card reveal">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">UI/UX &amp; Graphic Designer</h3>
+                  <h4 class="exp-company">
+                    <i class="fa-solid fa-palette"></i> Freelance Creative
+                  </h4>
+                </div>
+                <span class="exp-date mono">2023 - Present</span>
+              </div>
+              <ul class="exp-details">
+                <li>
+                  Craft geometric vector logos, custom typography systems, and
+                  responsive design systems.
+                </li>
+                <li>
+                  Combine traditional Moroccan architectural aesthetics with
+                  modern 3D digital modeling and web interfaces.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag mono">06. // FEATURED WORK</span>
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="section-line"></div>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="project-filters reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fullstack">
+              Full-Stack
+            </button>
+            <button class="filter-btn" data-filter="3d">3D &amp; Design</button>
+            <button class="filter-btn" data-filter="edtech">
+              EdTech &amp; Tools
+            </button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card reveal" data-category="fullstack">
+              <div class="project-top">
+                <i class="fa-regular fa-folder-open folder-icon"></i>
+                <div class="project-links">
+                  <a href="#" aria-label="GitHub Repo"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="#" aria-label="Live Demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">My-Entrepreneur Dashboard</h3>
+              <p class="project-desc">
+                A comprehensive management platform tailored for
+                auto-entrepreneurs, featuring automated invoicing, revenue
+                analytics, tax tracking, and client CRM.
+              </p>
+              <div class="project-tech mono">
+                <span>Next.js</span>
+                <span>Tailwind</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card reveal" data-category="3d">
+              <div class="project-top">
+                <i class="fa-solid fa-cube folder-icon"></i>
+                <div class="project-links">
+                  <a href="#" aria-label="GitHub Repo"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="#" aria-label="Live Demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">3D Maghribi Marketplace</h3>
+              <p class="project-desc">
+                E-commerce platform and digital asset showcase celebrating
+                Moroccan architectural arches and zellige motifs through 3D
+                printable models and interactive previews.
+              </p>
+              <div class="project-tech mono">
+                <span>React Three Fiber</span>
+                <span>Next.js</span>
+                <span>3D Modeling</span>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card reveal" data-category="edtech">
+              <div class="project-top">
+                <i class="fa-solid fa-graduation-cap folder-icon"></i>
+                <div class="project-links">
+                  <a href="#" aria-label="GitHub Repo"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="#" aria-label="Live Demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">E-Teaching Interactive Hub</h3>
+              <p class="project-desc">
+                Interactive learning management portal built for computer
+                science cohorts, featuring automated grading modules, algorithm
+                sandboxes, and curriculum tracking.
+              </p>
+              <div class="project-tech mono">
+                <span>React</span>
+                <span>Express.js</span>
+                <span>MySQL</span>
+                <span>Docker</span>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card reveal" data-category="edtech">
+              <div class="project-top">
+                <i class="fa-solid fa-terminal folder-icon"></i>
+                <div class="project-links">
+                  <a href="#" aria-label="GitHub Repo"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="#" aria-label="Live Demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">CLI AI Workflow Suite</h3>
+              <p class="project-desc">
+                Local command-line automation toolkit integrating LLM workflows
+                for rapid code auditing, automated documentation generation, and
+                scaffolding.
+              </p>
+              <div class="project-tech mono">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>OpenCode CLI</span>
+                <span>Gemini API</span>
+              </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="project-card reveal" data-category="fullstack">
+              <div class="project-top">
+                <i class="fa-solid fa-code folder-icon"></i>
+                <div class="project-links">
+                  <a href="#" aria-label="GitHub Repo"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="#" aria-label="Live Demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">GoToDev Studio Portal</h3>
+              <p class="project-desc">
+                Digital agency platform showcasing full-stack development
+                services, UI/UX case studies, and interactive project estimation
+                calculators.
+              </p>
+              <div class="project-tech mono">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>shadcn/ui</span>
+                <span>Figma</span>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project-card reveal" data-category="3d">
+              <div class="project-top">
+                <i class="fa-solid fa-bezier-curve folder-icon"></i>
+                <div class="project-links">
+                  <a href="#" aria-label="Behance"
+                    ><i class="fa-brands fa-behance"></i
+                  ></a>
+                  <a href="#" aria-label="Live Demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <h3 class="project-title">Geometric Brand Systems</h3>
+              <p class="project-desc">
+                A curated collection of mathematical grid-based vector logos,
+                custom Arabic/Latin typography pairings, and complete brand
+                guidelines.
+              </p>
+              <div class="project-tech mono">
+                <span>Illustrator</span>
+                <span>Vector Grid</span>
+                <span>Brand UI</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-cta reveal">
+          <span class="mono accent">07. // WHAT'S NEXT?</span>
+          <h2>Let's Build Something Together</h2>
+          <p>
+            Whether you have a full-stack project in mind, need UI/UX
+            consulting, or want to collaborate on tech education, my inbox is
+            always open.
+          </p>
+          <a href="mailto:hello@gotodev.ma" class="btn btn-primary">
+            <i class="fa-regular fa-paper-plane"></i> Say Hello
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          <a href="#hero" class="logo">
+            <span class="code-bracket">&lt;</span>Dev<span class="accent"
+              >Studio</span
+            ><span class="code-bracket">/&gt;</span>
+          </a>
+
+          <!-- Social Media Icons (Font Awesome) -->
+          <div class="social-links">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="X / Twitter"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://behance.net"
+              target="_blank"
+              rel="noopener"
+              aria-label="Behance"
+            >
+              <i class="fa-brands fa-behance"></i>
+            </a>
+          </div>
+
+          <p class="copyright mono">
+            Designed &amp; Built with
+            <i class="fa-solid fa-code accent"></i> &copy;
+            <span id="year"></span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
